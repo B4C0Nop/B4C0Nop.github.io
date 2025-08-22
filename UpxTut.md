@@ -101,8 +101,48 @@ After finding the giant block of code we want to select the jump intruction befo
 Now we want to hit run and reach our breakpoint
 ![Error Loading Image](baconTUT/09X64BacontutRun.jpg)
 
-After reaching our breakpoint next press step into and then copy the address of RIP
+After reaching our breakpoint next press step into and then copy the address of RIP. Congrats we have found the OEP
 ![Error Loading Image](baconTUT/10X64BacontutCopyAddress.jpg)
+#Step 2 & 3
 
+Next, we open Scylla from the x64dbg toolbar. Once Scylla is open, paste the RIP address you copied from the breakpoint into the OEP field. This tells Scylla where the Original Entry Point of the unpacked binary is located.
+
+Click “IAT Autosearch” to have Scylla locate the Import Address Table. Once Scylla finds the imports, press “Get imports”. Next press “Dump” to save the unpacked binary to disk. If the original file was named "bacontutUPX" the dump will be named "bacontutUPX_dump". Finally, use Scylla’s “Fix Dump” options to ensuring the dumped binary is runnable outside of the debugger. If the original file was named "bacontutUPX_dump" the dump will be named "bacontutUPX_dump_SCY". 
 ![Error Loading Image](baconTUT/11X64BacontutScylla.jpg)
+
+#Verify in Ghidra
+
+Open the dumped file (bacontutUPX_dump_SCY) in Ghidra. You should now see the following:
+The Imports are restored.
+The Functions are recognizable in the listing view.
+All the Strings are present, including the hardcoded password (flag{bacon}). 
 ![Error Loading Image](baconTUT/12GhidraBacontutFLAG.jpg)
+
+This confirms that the binary has been successfully unpacked and can now be analyzed normally. You can now run the binary to test that it behaves as expected or continue reverse engineering it further.
+
+Optional notes for readers
+Some binaries may require additional fixes after dumping, depending on how the packer works.
+Always keep a backup of the original packed binary in case something goes wrong.
+Scylla provides an easy interface for reconstructing both the IAT and PE header, which is crucial for creating a fully runnable unpacked file.
+
+Manually unpacking UPX resource list
+
+
+https://medium.com/%407HPL/unpacking-upx-in-x64-d186b2d72c70 -Unpacking UPX in x64
+
+https://www.youtube.com/watch?v=fBPj5yEJgck&t=1675s - - x64dbg Demo | CrackMe Challenges
+
+https://www.youtube.com/watch?v=Npm5tuy1Pp4&t=14s - Working with UPX - Manual Unpacking with IDA Pro, x32dbg and Scylla
+
+https://www.youtube.com/watch?v=guOcU-ZTL3A -Unpacking UPX in a Debugger | Under 1min
+
+https://www.manrajbansal.com/post/manually-unpacking-a-upx-packed-binary -Manually unpacking a UPX packed binary
+
+https://hshrzd.wordpress.com/2025/03/22/unpacking-executables-with-tinytracer-pe-sieve/ - hasherezade's 1001 nights: Tutorial: unpacking executables with TinyTracer + PE-sieve
+
+https://infosecwriteups.com/how-to-unpack-upx-packed-malware-with-a-single-breakpoint-4d3a23e21332?gi=353dab816e00 -How to unpack UPX packed malware with a 
+SINGLE breakpoint
+
+https://dplastico.github.io/sin%20categor%C3%ADa/2022/04/21/packed-binaries.html - PACKED BINARIES (And how to unpack them)
+
+https://cyberlab.pacific.edu/courses/comp272/labs/lab-8-anti-re - Lab 8 - Anti-RE Techniques
