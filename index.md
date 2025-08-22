@@ -1,13 +1,11 @@
 # Welcome to My Blog
 
-Hey! I'm Bacon. This is my new blog.
+Hey! I'm Bacon. This is my blog.
 I’ll be posting updates here as I go.  
 
 - **Day 37**: Starting out — created the blog on GitHub.  
-- **Day 36**: Watched the [x64dbg dev stream](https://www.youtube.com/watch?v=eODAI3Z1dKc) , read *Practical Malware Analysis* (ch.18), and checked out various UPX unpacking tutorials.  
-  I was supposed to post my first tutorial today, but the topic turned out to be more complicated than I expected. A bit disappointed to   have missed the goal, but that just means more to learn. Planning to read Flare-On writeups until I fall asleep.  
-
-More posts soon...
+- **Day 36**: Watched the [x64dbg dev stream](https://www.youtube.com/watch?v=eODAI3Z1dKc) , read *Practical Malware Analysis* (ch.18), and checked out various UPX unpacking tutorials. I was supposed to post my first tutorial today, but the topic turned out to be more complicated than I expected. A bit disappointed to have missed the goal, but that just means more to learn. Planning to read Flare-On writeups until I fall asleep.  
+- **Day 35** Finished the rough draft of the tutorial (below). Still need to figure out how to move it to a separate page without breaking the formatting. The tutorial itself needs a lot of formatting improvements, but I’m relieved it’s finished as it’s the end of Day 35, and I’ve already spent more time on this than I originally planned. I’ll keep reading Flare-On write-ups until I fall asleep. Tomorrow I’ll make a study plan
 
 I recently created this blog in preparation for Flare-on 2025.  
 To practice writing technical write-ups, I decided to create a tutorial on how to manually unpack UPX. In this tutorial, we’ll take a simple C program, pack it with UPX, and then manually unpack it using x64dbg, step by step.
@@ -157,3 +155,7 @@ SINGLE breakpoint
 https://dplastico.github.io/sin%20categor%C3%ADa/2022/04/21/packed-binaries.html - PACKED BINARIES (And how to unpack them)
 
 https://cyberlab.pacific.edu/courses/comp272/labs/lab-8-anti-re - Lab 8 - Anti-RE Techniques
+
+
+
+More posts soon...
