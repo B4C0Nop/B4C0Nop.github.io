@@ -53,7 +53,7 @@ int main()
 Next, after compiling the source above, we will pack the resulting binary with UPX.
 
 
-##Step 1 How to tell if a binary is packed with UPX##
+#Step 0 How to tell if a binary is packed with UPX
 To determine if your binary is packed or not there are some indicators to look out for which will indicate that the binary is packed. The first of which is checking the binary's entropy.
 
 Entropy is a measure of randomness and the higher the entropy the more random the data is, usually indicating that it is encoded or encrypted. The rule of thumb is that, if the entropy is 6.5 and above this is an indicator that the sample may be packed. 
@@ -74,12 +74,35 @@ Another easy to spot indicator is the sections. Notice the comparison of the unp
 ##PEBear Comparison##
 ![Error Loading Image](baconTUT/03PEBearComparison.png)
 
+Other indicators to look out for in PEBear, which were not included in the screenshots, are high compression ratios, which often indicates that a packer has been used because the binary has been significantly reduced in size, and the differences between Raw Size and Virtual Size in the section headers.
+**Raw Size** is how much space the section takes in the file on disk.
+**Virtual Size** is how much memory it will occupy when loaded.
+For packed binaries, the Raw Size of a compressed section like .UPX0 is much smaller than its Virtual Size because it will expand in memory once decompressed. In contrast, normal binaries have similar Raw and Virtual sizes as shown in the screenshot above.
+
+Now for the other Idicators we will open the binary in Ghidra. Below is a screenshot of a unpacked binary(bacontut.exe) opened in Ghidra. Pay careful attention to the Imports on the left, the listing view in the middle and the Strings on the right.
+
 ![Error Loading Image](baconTUT/04GhidraBacontut.jpg)
+
+Now compare the above image to the one below. Notice how there are very little Imports and Functions. Now if you look at the listing view you will see that it  looks like a bunch of junk and makes no sense. It was successfully packed and obfuscated though as we can tell by the upx1 text segment. Next look at the right and see how very little strings there are compared to the unpacked binary. 
 ![Error Loading Image](baconTUT/05GhidraBacontutUPX.jpg)
+
+After considering those indicators we can now determine whether or not the binary is packed and move on to step 1
+
+##Step 1 Find the OEP
+Now we will open the packed binary in X64debug. Below is a simple screenshot of what it looks like when you open the binary in x64debug
 ![Error Loading Image](baconTUT/06OpenX64dbg.jpg)
+
+Next we will need to look for the OEP. A simple way of doing this is pressing `g` to go into the graph view. What we are looking for is a jmp instruction before a giant block of code like the one below. If you do not see the giant code block just keep stepping and going back into graph view until you do. You will know it when you see it.
 ![Error Loading Image](baconTUT/07X64BacontutGraph.jpg)
+
+After finding the giant block of code we want to select the jump intruction before it and set a breakpoint.
 ![Error Loading Image](baconTUT/08X64BacontutBreakpoint.jpg)
+
+Now we want to hit run and reach our breakpoint
 ![Error Loading Image](baconTUT/09X64BacontutRun.jpg)
+
+After reaching our breakpoint next press step into and then copy the address of RIP
 ![Error Loading Image](baconTUT/10X64BacontutCopyAddress.jpg)
+
 ![Error Loading Image](baconTUT/11X64BacontutScylla.jpg)
 ![Error Loading Image](baconTUT/12GhidraBacontutFLAG.jpg)
