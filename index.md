@@ -13,11 +13,11 @@ To practice writing technical write-ups, I decided to create a tutorial on how t
 So what is [UPX](https://github.com/upx/upx)?  
 **UPX** stands for The **U**ltimate **P**acker for e**X**ecutables. It's a free and open-source executable packer that can typically reduce the size of programs and DLLs by **50%-70%**.
 
-*But what is a packer?*
+But what is a packer?
 Packers, also called runtime packers or self-extracting archives, are software that unpack themselves in memory when executed. This technique is sometimes referred to as executable compression, and it was originally invented to make files smaller so users wouldn’t have to unpack them manually.  
 For more info, check out [Malwarebytes](https://www.malwarebytes.com/blog/news/malware/2017/03/explained-packer-crypter-and-protector).
 
-*So how do we manually unpack a binary?*
+So how do we manually unpack a binary?
 In the simplest of terms, we will basically run the packed binary to let the unpacking stub unpack the binary for us and then dump the process to disk and manually fix the PE header. Usually this is done in three simple steps:
 1. Find the OEP
 2. Fix the IAT
