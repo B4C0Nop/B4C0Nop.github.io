@@ -144,7 +144,7 @@ Scylla provides an easy interface for reconstructing both the IAT and PE header,
   
 [Working with UPX Manual Unpacking with IDA Pro, x32dbg and Scylla](https://www.youtube.com/watch?v=Npm5tuy1Pp4&t=14s)
 
-[Unpacking UPX in a Debugger | Under 1min](https://www.youtube.com/watch?v=guOcU-ZTL3A) 
+[Unpacking UPX in a Debugger Under 1min](https://www.youtube.com/watch?v=guOcU-ZTL3A) 
 
 [Manually unpacking a UPX packed binary](https://www.manrajbansal.com/post/manually-unpacking-a-upx-packed-binary) 
 
