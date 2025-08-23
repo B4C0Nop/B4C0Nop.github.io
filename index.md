@@ -13,11 +13,11 @@ To practice writing technical write-ups, I decided to create a tutorial on how t
 So what is [UPX](https://github.com/upx/upx)?  
 **UPX** stands for The **U**ltimate **P**acker for e**X**ecutables. It's a free and open-source executable packer that can typically reduce the size of programs and DLLs by **50%-70%**.
 
-But what is a packer?  
+*But what is a packer?*
 Packers, also called runtime packers or self-extracting archives, are software that unpack themselves in memory when executed. This technique is sometimes referred to as executable compression, and it was originally invented to make files smaller so users wouldn’t have to unpack them manually.  
 For more info, check out [Malwarebytes](https://www.malwarebytes.com/blog/news/malware/2017/03/explained-packer-crypter-and-protector).
 
-So how do we manually unpack a binary?
+*So how do we manually unpack a binary?*
 In the simplest of terms, we will basically run the packed binary to let the unpacking stub unpack the binary for us and then dump the process to disk and manually fix the PE header. Usually this is done in three simple steps:
 1. Find the OEP
 2. Fix the IAT
@@ -33,7 +33,7 @@ There are various methods of doing this but I will be using a fairly simple one 
 - DIE
 - PEBear
 
-**Creating a simple program**
+**Creating a simple program:**
 We'll start with a minimal C program that prompts the user for a password and compares it to a hardcoded string `flag{bacon}` This will be our test program for packing and unpacking.
 
 **Source Code:**
@@ -59,11 +59,11 @@ int main()
     return 0;
 }
 ```
-**Packing with UPX**
+**Packing with UPX:**
 Next, after compiling the source above, we will pack the resulting binary with UPX.
 
 
-###**Step 0 How to tell if a binary is packed with UPX**
+###**Step 0 How to tell if a binary is packed with UPX:**
 To determine if your binary is packed or not there are some indicators to look out for which will indicate that the binary is packed. The first of which is checking the binary's entropy.
 
 Entropy is a measure of randomness and the higher the entropy the more random the data is, usually indicating that it is encoded or encrypted. The rule of thumb is that, if the entropy is 6.5 and above this is an indicator that the sample may be packed. 
@@ -98,7 +98,7 @@ Now compare the above image to the one below. Notice how there are very little I
 
 After considering those indicators we can now determine whether or not the binary is packed and move on to step 1
 
-####**Step 1 Find the OEP**
+####**Step 1 Find the OEP:**
 Now we will open the packed binary in X64debug. Below is a simple screenshot of what it looks like when you open the binary in x64debug
 ![Error Loading Image](baconTUT/06OpenX64dbg.jpg)
 
@@ -140,9 +140,9 @@ Scylla provides an easy interface for reconstructing both the IAT and PE header,
 
 [Unpacking UPX in x64](https://medium.com/%407HPL/unpacking-upx-in-x64-d186b2d72c70)
 
-[x64dbg Demo | CrackMe Challenges](https://www.youtube.com/watch?v=fBPj5yEJgck&t=1675s)
+[x64dbg Demo CrackMe Challenges](https://www.youtube.com/watch?v=fBPj5yEJgck&t=1675s)
   
-[Working with UPX - Manual Unpacking with IDA Pro, x32dbg and Scylla](https://www.youtube.com/watch?v=Npm5tuy1Pp4&t=14s)
+[Working with UPX Manual Unpacking with IDA Pro, x32dbg and Scylla](https://www.youtube.com/watch?v=Npm5tuy1Pp4&t=14s)
 
 [Unpacking UPX in a Debugger | Under 1min](https://www.youtube.com/watch?v=guOcU-ZTL3A) 
 
