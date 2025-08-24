@@ -3,9 +3,12 @@
 Hey! I'm Bacon. This is my blog.
 I’ll be posting updates here as I go.  
 
-- **Day 37**: Starting out — created the blog on GitHub.  
+- **Day 37**: Created the blog on GitHub.  
 - **Day 36**: Watched the [x64dbg dev stream](https://www.youtube.com/watch?v=eODAI3Z1dKc) , read *Practical Malware Analysis* (ch.18), and checked out various UPX unpacking tutorials. I was supposed to post my first tutorial today, but the topic turned out to be more complicated than I expected. A bit disappointed to have missed the goal, but that just means more to learn. Planning to read Flare-On writeups until I fall asleep.  
-- **Day 35** Finished the rough draft of the tutorial (below). Still need to figure out how to move it to a separate page without breaking the formatting. The tutorial itself needs a lot of formatting improvements, but I’m relieved it’s finished as it’s the end of Day 35, and I’ve already spent more time on this than I originally planned. I’ll keep reading Flare-On write-ups until I fall asleep. Tomorrow I’ll make a study plan
+- **Day 35**: Finished the rough draft of the tutorial (below). Still need to figure out how to move it to a separate page without breaking the formatting. The tutorial itself needs a lot of formatting improvements, but I’m relieved it’s finished as it’s the end of Day 35, and I’ve already spent more time on this than I originally planned. I’ll keep reading Flare-On write-ups until I fall asleep. Tomorrow I’ll make a study plan
+- **Day 34:** Worked a bit on the formatting today: bolded some sections and fixed the links. I’ll probably keep tweaking things little by little, experimenting with different ideas. Also played around with screenshots and figured out a few tricks that should save me time and make my workflow smoother. I’ve been browsing through a lot of other blogs, including some from friends, to see what I can adapt for mine. Really like the aesthetic of [CyberJerry’s](https://revdiaries.com/), the professionalism of [Hasherezade’s](https://hshrzd.wordpress.com/), and the style of [Rick’s](https://0xrick.github.io/) -- hoping to pull a little inspiration from each. Didn’t get quite as much done as I’d hoped, but I kept up with reading Flare-On write-ups and added more notes for my study guide. Planning to wrap that up tomorrow.
+
+More posts soon...
 
 I recently created this blog in preparation for Flare-on 2025.  
 To practice writing technical write-ups, I decided to create a tutorial on how to manually unpack UPX. In this tutorial, we’ll take a simple C program, pack it with UPX, and then manually unpack it using x64dbg, step by step.
@@ -158,6 +161,3 @@ Scylla provides an easy interface for reconstructing both the IAT and PE header,
 
 [Lab 8 - Anti-RE Techniques](https://cyberlab.pacific.edu/courses/comp272/labs/lab-8-anti-re)
 
-
-
-More posts soon...
