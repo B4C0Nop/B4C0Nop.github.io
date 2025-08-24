@@ -141,7 +141,6 @@ This confirms that the binary has been successfully unpacked and can now be anal
 Optional notes for readers
 Some binaries may require additional fixes after dumping, depending on how the packer works.
 Always keep a backup of the original packed binary in case something goes wrong.
-Scylla provides an easy interface for reconstructing both the IAT and PE header, which is crucial for creating a fully runnable unpacked file.
 
 **Manually unpacking UPX resource list**
 
