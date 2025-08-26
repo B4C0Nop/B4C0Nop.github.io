@@ -1,7 +1,14 @@
 # Welcome to My Blog
 
 Hey! I'm Bacon. This is my blog.
-I’ll be posting updates here as I go.  
+I’ll be posting updates here as I go. 
+
+## Most Recent Post
+**Day 31:** Listened to [episode 6](https://pocketcasts.com/podcasts/69ee01c0-78f3-013d-fdd6-0affe53ca763/9ce71f67-a554-44a9-8ef4-ef26a8350fb1 ) of the podcast, which just so happened to feature Duncan and mentioned [Lena151](https://github.com/kosmokato/Lena151/tree/main/%5BSnD%5D%20%5Blena151%5D%20Reversing%20With%20Lena%20(Tutorials)). I plan to check out the tutorials later as they look like a solid resource. After that, I watched the [InvokeRE stream](https://www.twitch.tv/InvokeReversing). I added the [UPX tutorial](UpxTut.md) to a separate page. I also got the [ManyTypes](https://github.com/snowsnowsnows/ManyTypes) plugin for x64dbg working! I’m going to test it out further and report any odd behavior to the developers.
+
+Overall, I feel like I got quite a bit accomplished today, so I’m happy with the progress. This post marks the end of Day 31, which leaves only 30 more days until the [Flare-On](https://flare-on.com/) competition. I at least completed the bare minimum preparation for the week, so I’ll call it a win. I just need to focus on clearing items from my todo/study list rather than adding more but we’re not quite there yet. *Ç'est la vie*
+
+###Previous Posts 
 
 - **Day 37:** Created the blog on GitHub.  
 - **Day 36:** Watched the [x64dbg dev stream](https://www.youtube.com/watch?v=eODAI3Z1dKc) , read *Practical Malware Analysis* (ch.18), and checked out various UPX unpacking tutorials. I was supposed to post my first tutorial today, but the topic turned out to be more complicated than I expected. A bit disappointed to have missed the goal, but that just means more to learn. Planning to read Flare-On writeups until I fall asleep.  
@@ -11,6 +18,9 @@ I’ll be posting updates here as I go.
 ) [3](https://www.cisa.gov/news-events/cybersecurity-advisories/aa20-352a
 ). We had an internet outage for most of the day, but luckily I had write-ups downloaded to read and made sure to grab more just in case. Happy Ukraine Independence Day! Today, August 24, Ukraine celebrates its independence, marked by the Declaration of Independence in 1991. Instead of a strict study schedule, I’m experimenting with a list of things to do and working through them while setting weekly goals. Hopefully I’ll get more done tomorrow.
 - **Day 32:** Wasted most of the day trying to get the [ManyTypes](https://github.com/snowsnowsnows/ManyTypes) [plugin](https://github.com/snowsnowsnows/ManyTypes/releases/tag/v2.1) for x64dbg installed and working. Haven’t succeeded yet, but poking around x64dbg and its plugins still feels like a good time investment. Read write-ups and added items to my study list. I thought I’d be further along, but after going through a 50+ page write-up last night, I realized I’ve severely underestimated this task. Feels like I might have bitten off way more than I can chew, but the only option now is to keep moving forward and hopefully start clearing items from my list instead of just adding more sooner rather than later.
+- **Day 31:** Listened to [episode 6](https://pocketcasts.com/podcasts/69ee01c0-78f3-013d-fdd6-0affe53ca763/9ce71f67-a554-44a9-8ef4-ef26a8350fb1 ) of the podcast, which just so happened to feature Duncan and mentioned [Lena151](https://github.com/kosmokato/Lena151/tree/main/%5BSnD%5D%20%5Blena151%5D%20Reversing%20With%20Lena%20(Tutorials)). I plan to check out the tutorials later as they look like a solid resource. After that, I watched the [InvokeRE stream](https://www.twitch.tv/InvokeReversing). I added the [UPX tutorial](UpxTut.md) to a separate page. I also got the [ManyTypes](https://github.com/snowsnowsnows/ManyTypes) plugin for x64dbg working! I’m going to test it out further and report any odd behavior to the developers.
+
+Overall, I feel like I got quite a bit accomplished today, so I’m happy with the progress. This post marks the end of Day 31, which leaves only 30 more days until the [Flare-On](https://flare-on.com/) competition. I at least completed the bare minimum preparation for the week, so I’ll call it a win. I just need to focus on clearing items from my todo/study list rather than adding more but we’re not quite there yet. *Ç'est la vie*
 
 More posts soon...
 
