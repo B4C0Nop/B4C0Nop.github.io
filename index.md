@@ -8,7 +8,7 @@ I’ll be posting updates here as I go.
 
 Overall, I feel like I got quite a bit accomplished today, so I’m happy with the progress. This post marks the end of Day 31, which leaves only 30 more days until the [Flare-On](https://flare-on.com/) competition. I at least completed the bare minimum preparation for the week, so I’ll call it a win. I just need to focus on clearing items from my todo/study list rather than adding more but we’re not quite there yet. *Ç'est la vie*
 
-##Previous Posts 
+## Previous Posts 
 
 - **Day 37:** Created the blog on GitHub.  
 - **Day 36:** Watched the [x64dbg dev stream](https://www.youtube.com/watch?v=eODAI3Z1dKc) , read *Practical Malware Analysis* (ch.18), and checked out various UPX unpacking tutorials. I was supposed to post my first tutorial today, but the topic turned out to be more complicated than I expected. A bit disappointed to have missed the goal, but that just means more to learn. Planning to read Flare-On writeups until I fall asleep.  
