@@ -26,7 +26,7 @@ In the simplest of terms, we will basically run the packed binary to let the unp
 
 There are various methods of doing this but I will be using a fairly simple one that involves x64dbg and scylla.
 
-##**Setup**
+## **Setup**
 
 **Tools**
 - x64dbg
@@ -64,7 +64,7 @@ int main()
 Next, after compiling the source above, we will pack the resulting binary with UPX.
 
 
-###**Step 0 How to tell if a binary is packed with UPX:**
+## **Step 0 How to tell if a binary is packed with UPX:**
 To determine if your binary is packed or not there are some indicators to look out for which will indicate that the binary is packed. The first of which is checking the binary's entropy.
 
 Entropy is a measure of randomness and the higher the entropy the more random the data is, usually indicating that it is encoded or encrypted. The rule of thumb is that, if the entropy is 6.5 and above this is an indicator that the sample may be packed. 
@@ -99,7 +99,7 @@ Now compare the above image to the one below. Notice how there are very little I
 
 After considering those indicators we can now determine whether or not the binary is packed and move on to step 1
 
-####**Step 1 Find the OEP:**
+## **Step 1 Find the OEP:**
 Now we will open the packed binary in X64debug. Below is a simple screenshot of what it looks like when you open the binary in x64debug
 ![Error Loading Image](baconTUT/06OpenX64dbg.jpg)
 
@@ -114,7 +114,7 @@ Now we want to hit run and reach our breakpoint
 
 After reaching our breakpoint next press step into and then copy the address of RIP. Congrats we have found the OEP
 ![Error Loading Image](baconTUT/10X64BacontutCopyAddress.jpg)
-#####**Step 2 & 3**
+## **Step 2 & 3**
 
 Next, we open Scylla from the x64dbg toolbar. Once Scylla is open, paste the RIP address you copied from the breakpoint into the OEP field. This tells Scylla where the Original Entry Point of the unpacked binary is located.
 
