@@ -29,10 +29,10 @@ There are various methods of doing this but I will be using a fairly simple one 
 ## **Setup**
 
 **Tools**
-- x64dbg
-- Ghidra
-- DIE
-- PEBear
+- [x64dbg](https://x64dbg.com/)
+- [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
+- [DIE](https://github.com/horsicq/Detect-It-Easy)
+- [PEBear](https://github.com/hasherezade/pe-bear)
 
 **Creating a simple program:**
 We'll start with a minimal C program that prompts the user for a password and compares it to a hardcoded string `flag{bacon}` This will be our test program for packing and unpacking.
@@ -106,7 +106,7 @@ Now we will open the packed binary in X64debug. Below is a simple screenshot of 
 Next we will need to look for the OEP. A simple way of doing this is pressing `g` to go into the graph view. What we are looking for is a jmp instruction before a giant block of code like the one below. If you do not see the giant code block just keep stepping and going back into graph view until you do. You will know it when you see it.
 ![Error Loading Image](baconTUT/07X64BacontutGraph.jpg)
 
-After finding the giant block of code we want to select the jump intruction before it and set a breakpoint.
+After finding the giant block of code we want to select the jump intruction before it and set a breakpoint. This is called the Tail Jump.
 ![Error Loading Image](baconTUT/08X64BacontutBreakpoint.jpg)
 
 Now we want to hit run and reach our breakpoint
