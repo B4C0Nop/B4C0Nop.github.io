@@ -150,8 +150,9 @@ Always keep a backup of the original packed binary in case something goes wrong.
 
 [hasherezade's 1001 nights: Tutorial: unpacking executables with TinyTracer + PE-sieve](https://hshrzd.wordpress.com/2025/03/22/unpacking-executables-with-tinytracer-pe-sieve/) 
 
-
 [How to unpack UPX packed malware with a SINGLE breakpoint](https://infosecwriteups.com/how-to-unpack-upx-packed-malware-with-a-single-breakpoint-4d3a23e21332?gi=353dab816e00)
+
+[Unpacking Executables - The ESP Trick](https://goggleheadedhacker.com/blog/post/6#:~:text=Now%20we%20can%20run%20our,the%20process%20of%20unpacking%20the)
 
 [PACKED BINARIES (And how to unpack them)](https://dplastico.github.io/sin%20categor%C3%ADa/2022/04/21/packed-binaries.html)
 
