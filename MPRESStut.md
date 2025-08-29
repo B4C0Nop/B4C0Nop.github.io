@@ -5,7 +5,7 @@ title: Unpacking MPRESS Tutorial
 
 # Manually Unpacking MPRESS Tutorial
 
-In this tutorial, we’ll take a simple C program, pack it with MPRESS, and then manually unpack it using x64dbg, step by step. We could use the same method as the UPX tutorial but I'm going to use a different one for this one
+In this tutorial, we’ll take a simple C program, pack it with MPRESS, and then manually unpack it using x64dbg, step by step. We could use the same method as the [UPX tutorial](UpxTut.md) but I'm going to use a different one for this one
 
 What is "MPRESS"?
 
@@ -23,9 +23,9 @@ There are various methods of doing this but I will be using a fairly simple one 
 ## **Setup**
 
 **Tools**
-- x64dbg
-- Ghidra
-- DIE
+- [x64dbg](https://x64dbg.com/)
+- [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
+- [DIE](https://github.com/horsicq/Detect-It-Easy)
 
 
 **Creating a simple program:**
@@ -74,7 +74,7 @@ Now for the other Idicators we will open the binary in Ghidra. Below is a screen
 After considering those indicators we can now determine whether or not the binary is packed and move on to step 1
 
 ## **Step 1 Find the OEP:**
-NNow we will open the packed binary in x64debug. Below is a simple screenshot of what it looks like when you open the binary in x64debug.
+Now we will open the packed binary in x64debug. Below is a simple screenshot of what it looks like when you open the binary in x64debug.
 ![Error Loading Image](MPRESStut/03.png)
 Next we will need to look for the OEP. Go to the Symbols tab and put a breakpoint on VirtualAlloc.
 
