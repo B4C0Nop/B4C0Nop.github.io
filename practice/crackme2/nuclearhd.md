@@ -102,7 +102,7 @@ If we input the username 'bacon' our password would be '2575'
 
 Let’s work it out with "bacon":
 
-Characters → ASCII values:
+Characters -> ASCII values:
 
 'b' = 98
 
