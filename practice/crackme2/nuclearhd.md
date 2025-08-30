@@ -12,7 +12,7 @@ First step is to put it in DiE and check the entropy to see if it is packed
 The File is clearly not packed so lets open it up in Ghidra.
 # Main Function Overview:
 ![Error Loading Image](/practice/crackme2/2.png)
-The program generates a numeric password from the username, but it never actually displays the password. Instead, it calculates it internally using the sum of ASCII values of the username characters multiplied by the username length. Because the password isn’t shown, we need to reverse-engineer the generation logic to predict what the password will be for any given username ahead of time.
+The program generates a numeric password from the username, but it never actually displays the password. Instead, it calculates it internally using the username. Because the password isn’t shown, we need to reverse-engineer the generation logic to predict what the password will be for any given username ahead of time.
 
 Notice the generate_password function in main. lets RE that next
 ![Error Loading Image](/practice/crackme2/3.png)
