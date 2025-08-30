@@ -13,7 +13,8 @@ The File is clearly not packed so lets open it up in Ghidra.
 ![Error Loading Image](/practice/crackme2/2.png)
 Notice the generate_password function in main. lets RE that next
 ![Error Loading Image](/practice/crackme2/3.png)
-Interesting. So that's all the information we need to solve the Crackme. Allow me to explain.
+
+- Interesting. So that's all the information we need to solve the Crackme. Allow me to explain.
 # Function Signature
 
 ```c
