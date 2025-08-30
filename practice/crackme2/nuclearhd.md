@@ -5,6 +5,7 @@ title: nuclearhd Crackme Write-up
 
 # nuclearhd Crackme Write-up
 
+Link:  https://crackmes.one/crackme/6834cbfb6297cca3ff7d7cd5
 
 First step is to put it in DiE and check the entropy to see if it is packed
 ![Error Loading Image](/practice/crackme2/1.png)
