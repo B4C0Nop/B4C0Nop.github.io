@@ -1,4 +1,26 @@
-`YARA
+---
+layout: default
+title: Bitshifted's runtime.exe
+---
+
+# Initial Assessment
+
+Opened the file in DIE and it seems like the .data section is packed
+
+[Error Loading Image](Bitshifted/01.png)
+
+Dumped the data found here
+
+[Error Loading Image](Bitshifted/02.png)
+
+to be continued....
+
+
+# YARA Rules written for the binary:
+
+
+
+YARA`
 rule BitShifted_ProcessInjection
 {
   meta:
