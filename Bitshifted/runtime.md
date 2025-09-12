@@ -7,11 +7,11 @@ title: Bitshifted's runtime.exe
 
 Opened the file in DIE and it seems like the .data section is packed
 
-[Error Loading Image](1.png)
+[](1.png)
 
 Dumped the data found here
 
-[Error Loading Image](2.png)
+[](2.png)
 
 to be continued....
 
