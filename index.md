@@ -51,6 +51,7 @@ https://crackmes.one/crackme/68bffbe9224c0ec5dcedbe7a) and give feedback. [Josh�
 ) for later. Spent much of the day helping a new Discord member with a language barrier and saved some Spanish resources for future use. Heapsoverflow noted [Obsidian](https://obsidian.md/
 ) has a VIM mode, which makes me think about moving off WordPad.Didn’t do much practical work today, but tomorrow is a break day so I’ll have to make up for it later. Dans le meilleur des mondes possibles.
 
+- **Day 12:**
 - More posts soon...
 
 
